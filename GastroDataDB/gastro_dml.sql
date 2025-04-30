@@ -10,7 +10,8 @@ VALUES
 (7, 'Fernando', 'Bauzà', 'Sin observaciones'),
 (8, 'Narcisa', 'Tovar', 'No consumir gluten'),
 (9, 'Encarnación', 'Montalbán', 'Cliente VIP'),
-(10, 'Sabas', 'Catalá', 'Sin observaciones');
+(10, 'Sabas', 'Catalá', 'Sin observaciones'),
+(11, 'Manuel', 'Pedroza Gonzalez', 'Cliente VIP');
 
 -- Tuplas en tabla Platillo
 INSERT INTO Platillo (id_Platillo, Nombre, Importe)
@@ -24,7 +25,8 @@ VALUES
 (7, 'Hamburguesa BBQ', 24849),
 (8, 'Sopa de tortilla', 21242),
 (9, 'Tacos al pastor', 21524),
-(10, 'Ravioles de ricotta', 35090);
+(10, 'Ravioles de ricotta', 35090),
+(11, 'Caviar blanco', 850450);
 
 -- Tuplas en tabla Bebida
 INSERT INTO Bebida (id_Bebida, Nombre, Importe)
@@ -52,7 +54,7 @@ VALUES
 (7, 4, 'Terraza'),
 (8, 7, 'Segundo Piso'),
 (9, 3, 'Segundo Piso'),
-(10, 6, 'Terraza');
+(10, 6, 'Segundo Piso');
 
 -- Tuplas en tabla Mesero
 INSERT INTO Mesero (id_Mesero, Nombre, Apellido1, Apellido2)
@@ -80,4 +82,8 @@ VALUES
 (7, '2024-01-16', 7, 7, 8, 9, 7),
 (8, '2024-01-17', 8, 8, 9, 10, 8),
 (9, '2024-01-18', 9, 9, 10, 1, 9),
-(10, '2024-01-19', 10, 10, 1, 2, 10);
+(10, '2024-01-19', 10, 10, 1, 2, 10),
+(11, '2024-01-20', 10, 8, 5, 6,7),
+(12, '2024-01-21', 10, 6, 3, 10,7),
+(13, '2024-01-22', 5, 11, 7, 10, 3),
+(14, '2024-01-23', 11, 5, 3, 10, 1);
