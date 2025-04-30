@@ -10,6 +10,7 @@ CREATE TABLE Cliente(
 CREATE TABLE Sucursales(
 	sID SERIAL PRIMARY KEY,
 	sNombre VARCHAR(100) NOT NULL,
+	sCiudad VARCHAR(100) NOT NULL,
 	sUbicacion VARCHAR(100) NOT NULL
 );
 
@@ -20,6 +21,7 @@ CREATE TABLE Vehiculos(
 	vSucursalID INTEGER NOT NULL,
 	vEstado VARCHAR(20) DEFAULT 'Disponible',
 	vModelo INTEGER CHECK (vModelo BETWEEN 2000 AND 2025),
+	vVecesAlquilado INTEGER DEFAULT 0 CHECK (vVecesAlquilado >= 0),
 	FOREIGN KEY(vSucursalID) REFERENCES Sucursales(sID) ON UPDATE CASCADE
 );
 
